@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import CartBox from "./components/CartBox";
 import { useState, useEffect } from "react";
+import PageLoader from "./components/PageLoader";
 
 function App() {
   const [cartItems, setCartItems] = useState(() => {
@@ -35,39 +36,55 @@ function App() {
     localStorage.setItem("isDiscountUsed", isDiscountUsed);
   }, [isDiscountUsed]);
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
-      <Navbar cartItems={cartItems} onCartClick={() => setIsCartOpen(true)} />
+      {loading ? (
+        <PageLoader />
+      ) : (
+        <>
+          <Navbar cartItems={cartItems} onCartClick={() => setIsCartOpen(true)} />
 
-      <div className="p-4">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Home
-                cartItems={cartItems}
-                setCartItems={setCartItems}
-                isDiscountApplied={isDiscountApplied}
-                setIsDiscountApplied={setIsDiscountApplied}
-                isDiscountUsed={isDiscountUsed}
-                setIsDiscountUsed={setIsDiscountUsed}
+          <div className="p-4">
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <Home
+                    cartItems={cartItems}
+                    setCartItems={setCartItems}
+                    isDiscountApplied={isDiscountApplied}
+                    setIsDiscountApplied={setIsDiscountApplied}
+                    isDiscountUsed={isDiscountUsed}
+                    setIsDiscountUsed={setIsDiscountUsed}
+                  />
+                }
               />
-            }
-          />
-        </Routes>
-      </div>
-
-      <Footer />
-
-      {isCartOpen && (
-        <CartBox
-          cartItems={cartItems}
-          setCartItems={setCartItems}
-          onClose={() => setIsCartOpen(false)}
-          isDiscountApplied={isDiscountApplied}
-          setIsDiscountApplied={setIsDiscountApplied}
-          setIsDiscountUsed={setIsDiscountUsed}
-        />
+            </Routes>
+          </div>
+    
+          <Footer />
+    
+          {isCartOpen && (
+            <CartBox
+              cartItems={cartItems}
+              setCartItems={setCartItems}
+              onClose={() => setIsCartOpen(false)}
+              isDiscountApplied={isDiscountApplied}
+              setIsDiscountApplied={setIsDiscountApplied}
+              setIsDiscountUsed={setIsDiscountUsed}
+            />
+          )}
+        </>
       )}
     </>
   );
