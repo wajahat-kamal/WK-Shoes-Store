@@ -35,13 +35,13 @@ const LatestShoes = ({ cartItems, setCartItems }) => {
 
         <div className="flex flex-col md:flex-row justify-center items-start gap-4">
           {/* Left - Tall Shoe */}
-          <div className="overflow-hidden md:w-80 w-full rounded-2xl relative group h-[500px]">
+          <div className="overflow-hidden md:w-80 w-full rounded-2xl relative h-[500px]">
             <img
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
               src="/shoes-offer-images/shoe-offer-1.webp"
               alt="Summit Sneakers"
             />
-            <div className="absolute bottom-11 left-3 flex flex-row w-[90%] items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <div className="absolute bottom-11 left-3 flex flex-row w-[90%] items-center justify-between ">
               <h2 className="text-black font-bold text-xl">Summit Sneakers</h2>
               <h2 className="text-black font-bold text-xl">$169</h2>
             </div>
@@ -54,7 +54,7 @@ const LatestShoes = ({ cartItems, setCartItems }) => {
                 )
               }
               className="absolute bottom-3 left-3 text-sm w-[92.5%] text-center py-1 rounded-2xl font-bold
-              hover:bg-[#f8f05e] text-white active:scale-95 bg-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              hover:bg-[#f8f05e] text-white active:scale-95 bg-yellow-400 "
             >
               Add to Cart
             </button>
@@ -63,13 +63,13 @@ const LatestShoes = ({ cartItems, setCartItems }) => {
           {/* Middle Column - Two stacked Shoes */}
           <div className="flex flex-col gap-4">
             {/* Shoe 2 */}
-            <div className="overflow-hidden md:w-80 w-full rounded-2xl relative group h-[245px]">
+            <div className="overflow-hidden md:w-80 w-full rounded-2xl relative h-[245px]">
               <img
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 src="/shoes-offer-images/shoe-offer-2.webp"
                 alt="Darkwave Runners"
               />
-              <div className="absolute bottom-9 left-3 flex flex-row w-[90%] items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="absolute bottom-9 left-3 flex flex-row w-[90%] items-center justify-between">
                 <h2 className="text-white font-bold text-xl">
                   Darkwave Runners
                 </h2>
@@ -84,20 +84,20 @@ const LatestShoes = ({ cartItems, setCartItems }) => {
                   )
                 }
                 className="absolute bottom-2 left-3 text-sm w-[92.5%] text-center py-1 rounded-2xl font-bold
-                hover:bg-[#f8f05e] text-white active:scale-95 bg-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                hover:bg-[#f8f05e] text-white active:scale-95 bg-yellow-400 "
               >
                 Add to Cart
               </button>
             </div>
 
             {/* Shoe 3 */}
-            <div className="overflow-hidden md:w-80 w-full rounded-2xl relative group h-[245px]">
+            <div className="overflow-hidden md:w-80 w-full rounded-2xl relative h-[245px]">
               <img
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 src="/shoes-offer-images/shoe-offer-3.webp"
                 alt="Midnight Oxford"
               />
-              <div className="absolute bottom-9 left-3 flex flex-row w-[90%] items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="absolute bottom-9 left-3 flex flex-row w-[90%] items-center justify-between">
                 <h2 className="text-white font-bold text-xl">
                   Midnight Oxford
                 </h2>
@@ -112,7 +112,7 @@ const LatestShoes = ({ cartItems, setCartItems }) => {
                   )
                 }
                 className="absolute bottom-2 left-3 text-sm w-[92.5%] text-center py-1 rounded-2xl font-bold
-                hover:bg-[#f8f05e] text-white active:scale-95 bg-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                hover:bg-[#f8f05e] text-white active:scale-95 bg-yellow-400"
               >
                 Add to Cart
               </button>
@@ -120,13 +120,13 @@ const LatestShoes = ({ cartItems, setCartItems }) => {
           </div>
 
           {/* Right - Tall Shoe */}
-          <div className="overflow-hidden md:w-80 w-full rounded-2xl relative group h-[500px]">
+          <div className="overflow-hidden md:w-80 w-full rounded-2xl relative h-[500px]">
             <img
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
               src="/shoes-offer-images/shoe-offer-4.webp"
               alt="Cardinal Sneakers"
             />
-            <div className="absolute bottom-11 left-3 flex flex-row w-[90%] items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <div className="absolute bottom-11 left-3 flex flex-row w-[90%] items-center justify-between ">
               <h2 className="text-black font-bold text-xl">
                 Cardinal Sneakers
               </h2>
@@ -141,7 +141,7 @@ const LatestShoes = ({ cartItems, setCartItems }) => {
                 )
               }
               className="absolute bottom-3 left-3 text-sm w-[92.5%] text-center py-1 rounded-2xl font-bold
-              hover:bg-[#f8f05e] text-white active:scale-95 bg-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              hover:bg-[#f8f05e] text-white active:scale-95 bg-yellow-400"
             >
               Add to Cart
             </button>

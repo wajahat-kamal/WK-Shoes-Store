@@ -45,7 +45,7 @@ export default function AboutSection() {
             About Shoes
           </h2>
           <p className="text-white mb-6 leading-relaxed">
-            Discover the Shoez story. We're passionate about creating footwear
+            Discover the<span className="text-yellow-400"> WK Shoes Store</span>. We're passionate about creating footwear
             that not only complements your style but also prioritizes comfort
             and quality.
           </p>
