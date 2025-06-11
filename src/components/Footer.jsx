@@ -20,14 +20,13 @@ function Footer() {
           target="_blank"
           href="https://wk-devportfolio.vercel.app"
         >
-          See the <span className="text-blue-500">Portfolio</span> of the person
-          who made this website.
+          Explore the <span className="text-blue-500">Portfolio</span>  of the website's creator.
         </a>
       </div>
 
       <div className="text-gray-400 text-center">
         <a href="#" className="text-blue-500 text-1xl ">
-          Github Code of this Website
+        Check the code of this Chatbot Website.
         </a>
         <h1 className="text-[12px] md:text-[15px]">
           Build with React JS and TailwindCSS.
