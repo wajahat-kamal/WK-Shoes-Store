@@ -42,7 +42,7 @@ function DiscountSection({
       return;
     }
 
-    const wantsDiscount = window.confirm(
+    const wantsDiscount = showCustomPopup(
       "Do you want to get a 30% discount? (Subscription is optional)"
     );
 
