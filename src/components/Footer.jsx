@@ -22,6 +22,7 @@ function Footer() {
         >
           Explore the <span className="text-blue-500">Portfolio</span>  of the website's creator.
         </a>
+        <p className="ext-[13px] md:text-[16px] font-semibold">Created in June 2025</p>
       </div>
 
       <div className="text-gray-400 text-center">
