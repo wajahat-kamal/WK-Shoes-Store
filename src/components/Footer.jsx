@@ -18,7 +18,7 @@ function Footer() {
         <a
           className="text-gray-400 md:text-lg text-center text-[14px] t"
           target="_blank"
-          href="https://wk-devportfolio.vercel.app"
+          href="https://wajahat-kamal-portfolio.vercel.app"
         >
           Explore the <span className="text-blue-500">Portfolio</span>  of the website's creator.
         </a>
