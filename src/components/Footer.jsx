@@ -18,7 +18,7 @@ function Footer() {
         <a
           className="text-gray-400 md:text-lg text-center text-[14px] t"
           target="_blank"
-          href="https://wajahat-kamal-portfolio.vercel.app"
+          href="https://wajahatkamal-dev.vercel.app"
         >
           Explore the <span className="text-blue-500">Portfolio</span>  of the website's creator.
         </a>
@@ -26,9 +26,6 @@ function Footer() {
       </div>
 
       <div className="text-gray-400 text-center">
-        <a href="#" className="text-blue-500 text-1xl ">
-        View the source code of the WK Shoes Store website.
-        </a>
         <h1 className="text-[12px] md:text-[15px]">
           Build with React JS and TailwindCSS.
         </h1>
