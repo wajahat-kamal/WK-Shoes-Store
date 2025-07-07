@@ -26,6 +26,9 @@ function Footer() {
       </div>
 
       <div className="text-gray-400 text-center">
+        <a href="#" className="text-blue-500 text-1xl ">
+        View the source code of the WK Shoes Store website.
+        </a>
         <h1 className="text-[12px] md:text-[15px]">
           Build with React JS and TailwindCSS.
         </h1>
